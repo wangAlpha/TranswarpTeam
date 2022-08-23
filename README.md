@@ -24,7 +24,7 @@
 ## 给你两个文件，每个文件10G，里面每一行都URL，请找出里面的相同的URL
 ### 思考
 - 这个操作是每天一次性的操作，还是可能数据文件不断增加，流式操作？
-- 一个 URL 长度为 2048 byte
+- 一个 URL 最大长度为 2048 byte
 - URL 请求，必定存在大量的重复 URL，可以考虑对 URL 进行去重再压缩
 - URL 本身有一定的规律，可以考虑采用URL压缩算法，内存的使用
  - 查询到了一篇论文 [In-memory URL Compression](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.8471&rep=rep1&type=pdf)，该算法可以压缩 URL 节省50%以上内存。
